@@ -1,0 +1,165 @@
+ <!DOCTYPE html>
+<!--Mike Hedges - Web 110 Final 
+The Internet of Things :: Contact Form
+7/24/2019-->
+<html lang="en">
+<head>
+	<title>The Internet of Things :: Form</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intitial-scale=1.0">
+
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="../stylesheets/style.css" media="screen">
+	
+	<link rel="stylesheet" href="../stylesheets/print.css" media="print">
+	
+<style>
+fieldset {
+	border: 2px solid #000;
+	border-radius: 7px;
+	background-color: #f4fdd6;
+	padding: 5%;
+	margin: 3% 5%;
+}
+
+label {
+	display: block;
+	text-align: left;
+	padding-right: 2%;
+}
+
+input {
+	margin-bottom: 2%;
+}
+
+input[type="submit"] {
+	margin-right: 3%;
+}
+
+input[type="checkbox"] {
+	margin-top: 0;
+}
+
+textarea {
+	display: block;
+}
+
+select {
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+
+p {
+	text-indent: -2em;
+	margin-bottom: -3%;
+	text-shadow: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+<header>
+	<h1><a href="../final1.html">The Internet of Things</a></h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="../final1.html">Home</a></li>
+		<li><a href="final2.html">Course Objectives</a></li>
+		<li><a href="final3.html">IoT and Security</a></li>
+		<li><a href="final4.html">Credits</a></li>
+		<li><a href="final5.html">Form</a></li>
+	</ul>
+</nav>
+
+<!--Right Column-->
+<div id="rightCol">
+The Internet of Things by Michael Hedges.<br>
+<a href="final2.html">Web 110, HTML and CSS</a><br>
+July 24, 2019
+
+<hr>
+<!--link to an inforgrahpic-->
+<a href="../images/IoT-Harbor-Postscapes-Infographic.pdf" target="blank"><img src="../images/info1.png" height="683"
+width="300" alt="What exactly is the Internet of Things?" class="info1"></a>
+</div>
+
+<!--Left Column-->
+
+<main>
+<div id="emailImage">
+	<h3 class="textContact">Contact Me</h3>
+</div>
+		<fieldset>
+
+			<form method="post" action="mailto:mhedges4@stumail.jccc.edu">
+			
+			<label for="myName">Your Name: </label>
+			<input type="text" name="myName" id="myName">
+
+			<label for="myEmail">Email: </label>
+			<input type="email" name="myEmail" id="myEmail">
+
+			<label for="myDate">Pick a day: </label>
+			<input type="date" name="myDate" id="myDate"><br>
+			
+			<select size="1" name="favoptions" id="favoptions">
+			<option>Select an IoT topic that interests you:</option>
+				<option value="option1">IoT Standards</option>
+				<option value="option2">IoT and Security</option>
+				<option value="option3">IoT Data Analysis</option>
+				<option value="option3">How to become an IoT developer</option>
+			</select>
+
+			<label for="myComment">What would you like to learn more about? </label>
+			<textarea name="myComment" id="myComment" rows="5" cols="50">
+			</textarea><br>
+
+			<input type="submit"><input type="reset"><br>
+		
+
+			<p>How do you prefer I contact you?  Pick all that apply:</p><br>
+			
+			
+			<label for="cbphone"><input type="checkbox" name="cbphone" id="cbphone">Phone</label>						
+			<label for="cbemail"><input type="checkbox" name="cbemail" id="cbemail">Email</label>						
+			<label for="cbtext"><input type="checkbox" name="cbtext" id="cbtext">Text message</label>			
+			<label for="cbother"><input type="checkbox" name="cbother" id="cbother" value="yes">Other.  Please explain below:</label>
+			
+			
+			<label for="cbOtherComment"></label>
+			<textarea name="cbOtherComment" id="cbOtherComment" rows="1" cols="50" class="checkboxCommentBox" >
+			</textarea><br>
+
+			
+			<p>Did you find this website to be helpful?  Please select one:</p><br>
+			<label for="this1"><input type="radio" name="sel" id="this1" value="this1">Yes</label>
+			<label for="this2"><input type="radio" name="sel" id="this2" value="this2">No</label>
+			<label for="this3"><input type="radio" name="sel" id="this3" value="this3">Not Sure</label>
+		
+
+		</form>
+	</fieldset>				
+	
+</main>
+<footer>
+<nav>
+	<ul>
+		<li><a href="../final1.html">Home</a></li>
+		<li><a href="final2.html">Course Objectives</a></li>
+		<li><a href="final3.html">IoT and Security</a></li>
+		<li><a href="final4.html">Credits</a></li>
+		<li><a href="final5.html">Form</a></li>
+	</ul>
+</nav>
+Copyright &copy; Michael Hedges 2019<br>
+Contact Me:&nbsp;&nbsp;<a href="mailto:mhedges4@stumail.jccc.edu">mhedges4@stumail.jccc.edu</a>
+</footer>
+
+</div>
+</body>
+</html>
