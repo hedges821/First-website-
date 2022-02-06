@@ -1,0 +1,538 @@
+/*Mike Hedges - Web 110 Final - 
+The Internet of Things
+7/24/2019*/
+
+/*------SCREEN STYLESHEET------*/
+
+
+/*
+Title of Page: The Internet of Things
+Description: The Internet of Things and Security Issues
+Author: Mike Hedges
+Author Email/URL: mhedges4@stumail.jccc.edu
+*/
+
+/*--Color Palette
+Primary colors
+color: #5A9146 - body,
+color: #DDFAD3 - #container, h1, nav a:hover{color}, footer nav a:hover{bg},
+color: #AAD799 - main,
+color: #2E5D1D 
+color: #091D02 - header, nav a:hover{bg},
+ 
+Secondary colors
+color: #346B63
+color: #CCF1EC 
+color: #709E98 
+color: #15453E - nav a:visited,
+color: #021513 - nav a:link, footer nav a:hover{color},
+
+Tertiary colors
+color: #90A24E - text-shadow
+color: #F4FDD6 - #rightCol,
+color: #E1F1AB - thead, tfoot,
+color: #586820 
+color: #1A2002 
+--*/
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+header, main, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+
+/*--General Styles--*/
+body {
+	background-color: #5a9146;	
+	background-image: linear-gradient(to bottom, #ffffff, #5a9146);
+	background-repeat: no-repeat;
+	font-family: "Times New Roman", serif;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 10px;
+	padding: 5px;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 10px;
+	font-weight: bold;
+	border-left: 1px solid #091d02;
+	border-right: 1px solid #091d02;
+}
+
+nav a:link {
+	color: #021513;
+}
+
+nav a:visited {
+	color: #15453e;
+}
+
+nav a:hover {
+	color: #ddfad3;
+	background-color: #091d02;
+}
+
+p a:link, aside a:link, tfoot a:link {
+	color:#021513;
+}
+
+p a:visited, aside a:visited, tfoot a:visited {
+	color: #021513;
+}
+
+p a:hover, aside a:hover, tfoot a:hover {
+	color: #901d02;
+}
+
+header {
+	background-image: url(../images/network.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 50%;
+	background-color: #091d02;
+	padding: 1px 4%;
+}
+
+main {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-right: 40%;
+	border: 3px groove #AAD799;
+	border-radius: 7px;
+	width: 60%;
+	clear: left;
+}
+
+h1 {
+	color: #ddfad3;
+	font-family: "Times New Roman", serif;
+	font-size: 3em;
+}
+
+h1 a {
+	text-decoration: none;
+	color: #ddfad3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 1px 1px 3px #90a2ae;
+}
+
+h2 {
+	padding-left: 2%;
+}
+
+h2 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+h3, h4, h5, h6 {
+	padding-left: 4%;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+h3 a {
+	text-decoration: none;
+	color: #000;
+}
+
+p {
+	padding: 1% 4%;
+	margin: 9px;
+	line-height: 150%;
+	text-shadow: 0.5px 0.5px 0.5px #90a2ae;
+	text-indent: 3em;
+}
+
+ul, ol {
+	line-height: 135%;
+	margin-left: 5%;
+}
+
+
+ol[type="A"] {
+	margin-left: 10%;
+}
+
+footer {
+	text-align: center;
+	font-size: small;
+	font-style: italic;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border: 3px groove #AAD799;
+	border-radius: 7px;
+}
+
+footer nav a {
+	border-left: none;
+	border-right: none;
+	font-style: normal;
+}
+
+footer nav a:hover {
+	background-color: #ddfad3;
+	color: #021513;
+}
+
+aside {
+	width: 15em;
+	padding: 1em;
+	background-color: #eaeaea;
+	font-size: 80%;
+	box-shadow: 5px 5px 8px;
+}
+
+dl {
+	margin-left: 0;
+	line-height: 150%;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	padding-bottom: 2%;
+}
+
+h2 a:hover, h3 a:hover {
+	color: #709e98;
+}
+
+
+/*--Table Styles--*/
+table {
+	border: 2px solid #AAD799;
+	margin-top: 5%;
+	margin-right: 3px;
+	text-align: center;
+	font-size: .75em;
+}
+
+thead, tfoot {
+	font-weight: bold;
+	background-color: #E1F1AB;
+}
+
+td, th {
+	border: 1px solid #aad799;
+}
+
+tr:nth-of-type(even) {
+	background-color: #E1F1AB;
+}
+
+
+/*--Classes--*/
+.floatRight {
+	float: right;
+}
+
+.clearFloat {
+	clear: left;
+}
+
+.textAlignLeft {
+	text-align: left;
+	padding-left: 1.5em;
+}
+
+.indentLine {
+	text-indent: 2em;
+}
+
+.margin15 {
+	margin-left: 15%;
+}
+
+.margin10 {
+	margin-left: 10%;
+}
+
+.textOverImage {
+	color: #ffffff;
+	text-shadow: 1.5px 1.5px 5px #000;
+	padding-top: 0;
+	font-size: 2.5em;
+}
+
+.textContact {
+	color: #000;
+	font-size: 2.5em;
+	padding-top: 2%;
+}
+
+/*--IDs--*/
+#container {
+	background-color: #ddfad3;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	box-shadow: 3px 3px 3px #000000;
+	border: 1px solid #000000;
+}	
+
+#firstAside {
+	float: right;
+	position: relative;
+	top: -20px;
+	right: 45px;
+	border-radius: 7px;
+}
+
+#rightCol {
+	float: right;
+	position: relative;
+	background-color: #f4fdd6;
+	border-radius: 8px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 4px #000;
+	text-align: left;
+	font-size: large;
+	width: 40%;
+	padding: 5% 2%;
+}
+
+
+/*--Images--*/
+
+
+/*final1.html*/
+#iotCloud {
+	background-image: url(../images/iotcloud.png);
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	width: 600px;
+	height: 200px;
+	float: left;
+	position: relative;
+	top: -10px;
+	left: 40px;
+}
+
+/*final4.html*/
+#communicationImage {
+	background-image: url(../images/communication.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	width: 500px;
+	height: 215px;
+	border-radius: 25px;
+	margin-left: 2%;
+	box-shadow: 4px 4px 3px #000;
+}
+
+/*final2.html*/
+#codeImage {
+	background-image: url(../images/code.png);
+	background-repeat: no-repeat;
+	background-size: 105%;
+	background-position: center;
+	width: 500px;
+	height: 120px;
+	border-radius: 25px;
+	border: 2px solid #000;
+	margin-left: 2%;
+	margin-top: 5%;
+}
+
+/*final3*/
+#keyboardImage {
+	background-image: url(../images/keyboard.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	width: 500px;
+	height: 150px;
+	border-radius: 25px;
+	border: 2px solid #000;
+	margin-left: 2%;
+	margin-top: 5%;
+}
+
+/*final5*/
+#emailImage {
+	background-image: url(../images/email.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	width: 500px;
+	height: 150px;
+	border-radius: 25px;
+	border: 2px solid #000;
+	margin-left: 2%;
+	margin-top: 5%;
+}
+
+/*final3.html*/
+#smartHome {
+	background-image: url(../images/smart_home.png);
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	width: 600px;
+	height: 200px;
+	float: left;
+	position: relative;
+	top: -10px;
+	left: 40px;
+}
+
+/*final1*/
+#iotComm {
+	background-image: url(../images/IoTcomm.jpg);
+	background-repeat: no-repeat;
+	background-size: 71%;
+	background-position: left;
+	width: 400px;
+	height: 250px;
+	margin-top: 0;
+}
+
+/*final3.html*/
+#cyberSecurity {
+	background-image: url(../images/cyber-security.jpg);
+	background-repeat: no-repeat;
+	background-size: 71%;
+	background-position: left;
+	width: 400px;
+	height: 250px;
+	margin-top: 1%;
+}
+	
+
+#info1 {
+	margin: 2% 2%;
+}	
+	
+/*--Media Queries--*/
+
+@media only screen and (max-width: 71.5em) {
+
+table {
+	display: none;
+}
+
+}
+
+/*--Tablet Display--*/
+@media only screen and (max-width: 64em) {
+
+#container {
+	width: auto;
+}
+
+#rightCol {
+	display: none;
+}
+
+nav a {
+	margin: 1px;
+	padding: 4px;
+}	
+	
+main {
+	width: 100%
+}
+
+nav {
+	width: auto;
+}
+
+footer nav, footer nav ul, footer nav li {
+	margin-top: 1px;
+	margin-bottom: 5px;
+}
+
+footer nav a {
+	display: block;
+	border: none;
+}
+
+footer nav li {
+	display: block;
+}
+
+footer nav ul {
+	text-align: left;
+}
+
+#communicationImage {
+	display: none;
+}
+
+/*Media queries require a closing brace*/	
+}
+
+/*--Smartphone Display--*/
+@media only screen and (max-width: 37.5em) {
+
+
+#container {
+	width: auto;
+}
+
+#rightCol {
+	display: none;
+}
+
+header {
+	background-image: none;
+}
+	
+main {
+	width: 100%;
+	background-color: #fff;
+}
+
+p {
+	font-size: 90%;
+}
+
+aside, #iotCloud, #communicationImage, #codeImage, #keyboardImage, #emailImage, #smartHome, #iotComm, #cyberSecurity {
+	display: none;
+}
+
+nav, nav ul, nav li {
+	margin-top: 1px;
+	margin-bottom: 5px;
+}
+
+nav a {
+	display: block;
+	border: none;
+	border-bottom: 2px solid #000;
+}
+
+nav li {
+	display: block;
+}
+
+nav ul {
+	text-align: center;
+}
+	
+/*Media queries require a closing brace*/	
+}
